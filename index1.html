@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                overflow: hidden;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+
+            }
+            .box{
+                margin-left:40%;
+               text-align: center;
+               width: 100px;
+               height:70px;
+               border:2px solid white;
+               border-radius: 0 0 15px 15px;
+               background: white;
+               padding: 0 40px;
+               color: hsl(270, 100%, 60%);
+               box-shadow:0px 1px #888888;
+
+           }
+           .box1{
+               color: yellow;
+               text-align: center;
+               font-size: 12px;
+               border: 1px solid rgb(56, 12, 56);
+               width: 25px;
+               margin-top: 8px;
+               margin-left: 33px;
+               border-radius: 4px;
+               background: hsl(270, 100%, 60%);
+               margin-bottom: 10px;
+           }
+           nav{
+               color: #888888;
+               padding-top: 20px;
+               padding-left: 100px;
+           }
+           nav a{
+               text-decoration: none;
+               color: #888888;
+           }
+           nav a:hover{
+              color: yellow;
+              border-bottom: 2px solid yellow;
+           }
+           nav ul li{
+               display: inline;
+               font-size: 10px;
+               padding: 15px;
+           }
+           .inpt{
+            float: right;
+            margin-right: 140px;
+            border: 1px solid #e4e4e4;;
+            color: #888888;
+            padding: 4px;
+            border-radius: 4px;
+            background-color: #e4e4e4;
+        }
+        .layout{
+            display: inline-flex;
+        }
+        .layout-1{
+            margin-left:10%;
+            margin-top: 20%;
+        }
+        .layout-1 .picture img{
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .layout-2{
+            width: 300px;
+            margin-top: 22%;
+            font-size: 15px;
+            margin-left: 10%;
+        }
+        .layout-2 p{
+            display:contents;   
+        }
+        .layout-3{
+            margin-top: 22%;
+            font-size: 15px;
+            margin-left: 70%;
+        }
+        .layout-3 p{
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+            color: yellow;
+            align-content: center;
+            padding: 20px;
+            border-radius: 0 0 0 100px;
+        }
+        .images{
+            margin-top: 55px;
+        }
+    
+       .grid-layout{
+            padding-left: 6%;
+            padding-top: 10px;
+            display: inline-flex;
+        }
+       .grid1, .grid2, .grid3, .grid4, .grid5{
+           width: 150px;
+           height: 150px;
+           border-radius: 15px;
+           margin-left: 30px;
+           background: white;
+           box-shadow: 0px 2px #dad6d6;
+       }
+       .pic{
+           width: 180px;
+           height: 100px;
+       }
+       .text{
+           padding: 10px 0  0 10px;
+           color: black;
+           font-size: 8px;
+           width: 150px;
+           height:80px;
+
+       }
+       .plus{
+           padding-left: 30px;
+           padding-top: 10px;
+           width: 20px;
+           height: 40px;
+           background: hsl(270, 100%, 60%);
+           color: yellow;
+           align-content: center;
+           border-radius: 0 0 0 80px;
+       }
+        @media only screen and (min-width: 1200px)
+       {
+        .layout-1{
+            margin-left: 20%;
+            margin-top: 20%;
+        }
+       } 
+
+       @media only screen and (max-width: 768px)
+{
+    nav{
+        margin-top: 20px;
+        margin-left: 90px;
+        width: 100%;
+       }
+       .inpt{
+           float: none;
+           margin-top: 20px;
+       }
+       .layout{
+           padding:0;
+           margin: 0;
+       }
+       .layout-1 .picture img{
+           height: 250px;
+           width: 150px;
+       }
+       .layout-2 h1{
+           font-size: 12px;
+       }
+       .layout-2 p{
+           font-size:8px;
+       }
+       .layout-3{
+            margin-top: 22%;
+            font-size: 15px;
+            margin-left: 5%;
+        }
+        .layout .images{
+           display: inline-flex;
+        }
+        .layout .images img{
+            padding: 3px;
+        }
+        .grid-layout{
+           padding-top: 50px;
+           padding-left:30%;
+           display: block;
+           width: 100%;
+       }
+       .grid-layout .grid{
+           margin-bottom: 10px;
+       }
+}
+    </style>
+    <body>
+            <div class="container">
+                    <div class="con-box">
+                            <div class="box">
+                                    <div class="box1">
+                                <h1>L</h1></div>
+                                <p><span>LOGO</span>HERE</p>
+                                </div>
+                                <nav>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="active">HOME</a>
+                                            </li>
+                                            <li>
+                                                    <a href="#">ARTICLES</a>
+                                            </li>
+                                            <li><a href="#">AUDIO</a></li>
+                                            <li><input type="text" class="inpt" placeholder="Search"></li>
+
+                                        </ul>
+                                    </nav>
+            <section>
+                <div class="layout">
+                <div class="layout-1">
+                    <div class="picture"><img src="croissant.jpg"></div>
+                </div>
+                <div class="layout-2">
+                     <h1>Check</h1>
+                     <h1>Recommended article</h1>
+                     <p style="font-size:8px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard<br> dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                
+            <div class="images">
+                    <img src="1.jpeg" width="50px" height="50px" style="border-radius:10px;">
+                    <img src="2.jpeg" width="50px" height="50px" style="border-radius:10px;">
+                    <img src="3.jpeg" width="50px" height="50px" style="border-radius:10px;">
+
+                </div>
+            </div>
+            <div class="layout-3">
+                            <p>&#43;</p>
+            </div>
+            </section>
+            <div class="grid-layout">
+                    <div class="grid grid1">
+                        <div class="pic">
+                          <img src="bhutto.jpeg" width="150px" height="100px" style="border-radius:10px 10px 0 0;">
+                        </div>        
+                <div class="text">
+                        <p><b>ZULFIQAR ALI BHUTTO</b></p><p>The prime minister of Pakistan</p>
+                
+                </div>
+                    </div>
+                    <div class="grid grid2"> 
+                              <div class="pic" style="background:white;">
+                                    <img src="bhutto.jpeg" width="150px" height="100" style="border-radius:10px 10px 0 0;">
+                
+                          </div>        
+                  <div class="text">
+                        <p><b>ZULFIQAR ALI BHUTTO</b></p><p>The prime minister of Pakistan</p></div></div>
+                    <div class="grid grid3"> 
+                              <div class="pic">
+                                    <img src="bhutto.jpeg" width="150px" height="100px" style="border-radius:10px 10px 0 0;">
+                                </div>        
+                  <div class="text">
+                      <p><b>ZULFIQAR ALI BHUTTO</b></p>
+                    <p>The prime minister of Pakistan</p></div></div>
+                      <div class="grid grid4"> 
+                            <div class="pic">
+                                  <img src="bhutto.jpeg" width="150px" height="100px" style="border-radius:10px 10px 0 0;">
+                              </div>        
+                <div class="text">
+                        <p><b>ZULFIQAR ALI BHUTTO</b></p><p>The prime minister of Pakistan</p></div> </div>
+                       <div class="grid grid5"> 
+                            <div class="pic">
+                                  <img src="bhutto.jpeg" width="150px" height="100px" style="border-radius:10px 10px 0 0;">
+                              </div>        
+                <div class="text">
+                        <p><b>ZULFIQAR ALI BHUTTO</b></p><p>The prime minister of Pakistan</p></div>
+                </div>
+    </body>
+</html>
